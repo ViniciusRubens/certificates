@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/background.jpg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 50px 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+
+    font-family: Merriweather Sans;
+}
+
+h1 {
+    color: rgb(90, 128, 128);
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: darkslategrey;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 10px;
+
+    text-align: center;
+}
+
+h3 {
+    color: rgb(90, 128, 128);;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 30px 10px;
+}
+
+.container h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container h3 {
+    text-align: justify;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+
+    margin: 50px;
+}
+
+.card-row {
+    display: flex;
+    gap: 50px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12 {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.card1 .front,
+.card2 .front,
+.card3 .front,
+.card4 .front,
+.card5 .front,
+.card6 .front,
+.card7 .front,
+.card8 .front,
+.card9 .front,
+.card10 .front,
+.card11 .front,
+.card12 .front,
+.card1 .back,
+.card2 .back,
+.card3 .back,
+.card4 .back,
+.card5 .back,
+.card6 .back,
+.card7 .back,
+.card8 .back,
+.card9 .back,
+.card10 .back,
+.card11 .back,
+.card12 .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    padding: 30px;
+}
+
+.card1 .front,
+.card2 .front,
+.card3 .front,
+.card4 .front,
+.card5 .front,
+.card6 .front,
+.card7 .front,
+.card8 .front,
+.card9 .front,
+.card10 .front,
+.card11 .front,
+.card12 .front {
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    transform: rotateY(0deg);
+}
+
+.card1 .back,
+.card2 .back,
+.card3 .back,
+.card4 .back,
+.card5 .back,
+.card5 .back,
+.card6 .back,
+.card7 .back,
+.card8 .back,
+.card9 .back,
+.card10 .back,
+.card11 .back,
+.card12 .back {
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    transform: rotateY(180deg);
+}
+
+.card1-img {
+    width: 120px;
+    height: 90px;
+}
+
+.card2-img {
+    width: 300px;
+    height: 90px;
+}
+
+.card3-img {
+    width: 120px;
+    height: 60px;
+}
+
+.card4-img {
+    width: 120px;
+    height: 100px;
+}
+
+.card7-img {
+    width: 120px;
+    height: 90px;
+}
+
+.header-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-front img {
+    margin: 15px 10px 0px;
+}
+
+.header-front p {
+    padding: 10px 15px 20px;
+}
+
+.footer-front {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin: 30px 10px 0px;
+}
+
+.date, .time {
+    color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.date img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.time img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.back h2 {
+    font-size: 16px;
+}
+
+.header-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-back p {
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-bottom: 10px;
+}
+
+.middle-back p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.footer-back a {
+    color: rgb(222, 233, 233);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
