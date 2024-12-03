@@ -36,7 +36,7 @@ footer {
 h1 {
     width: 100%;
     max-width: 1000px;
-    color: rgb(90, 128, 128);
+    color: #f0f0f0;
     font-size: 36px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-    color: rgb(90, 128, 128);;
+    color: #f0f0f0;
     font-size: 20px;
     font-weight: 400;
     padding: 0px 30px 10px;
